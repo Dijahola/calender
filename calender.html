@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calender </title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="check()">Check</button>
+    <div id="preview"></div>
+</body>
+</html>
+<script>
+    function check(){
+        let input = document.querySelector('#input').value.trim().toLowerCase()
+        if (input === 'january') {
+            preview.innerHTML = 'january is 31 days'
+        }
+        else  if(input === 'february') {
+            preview.innerHTML = 'february is 28 days'
+        }
+        else  if(input === 'april') {
+            preview.innerHTML = 'april, june, september, november are 30 days'
+        }
+        else  if(input === 'february') {
+            preview.innerHTML = 'february is 29 days in leap years'
+        }
+        else{
+            preview.innerHTML = ''
+        }
+
+        
+        
+    }
+</script>
